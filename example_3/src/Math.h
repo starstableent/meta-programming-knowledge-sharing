@@ -17,7 +17,7 @@ auto Add_2(T a, T b)
     //return a + b;
 }
 
-template<typename T, typename = std::enable_if_t<std::is_arithmetic<T>::value>>
+template<typename T, typename = std::enable_if_t<std::is_arithmetic<T>::value, void>>
 auto Add_3(T a, T b)
 {
     return a + b;
